@@ -1,10 +1,13 @@
 require "bookmark"
 describe Bookmark do
 
-  it "user entry is stored in URL instance variable" do
-    bookmark = Bookmark.new("http://www.google.com/")
-    expect(bookmark.url).to eq "http://www.google.com/"
+  describe '.all' do
+    it 'returns a list of bookmarks' do
+      bookmarks = Bookmark.all
+
+      expect(bookmarks).to include "http://www.makersacademy.com"
+      expect(bookmarks).to include "http://www.destroyallsoftware.com"
+      expect(bookmarks).to include "http://www.google.com"
+    end
   end
-
-
 end

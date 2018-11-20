@@ -2,6 +2,7 @@ require_relative "./bookmark.rb"
 
 class List
   attr_accessor :contents
+  
   def see_list
     @contents
   end

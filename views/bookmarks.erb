@@ -1,5 +1,9 @@
 <h1>Your list of bookmarks</h1>
 <ul>
+    <% @bookmarks.each do |bookmark| %>
+    <li><%= bookmark %></li>
+    <% end %>
+<!--
       <li>http://www.google.com/</li>
-      <li>http://www.microsoft.com/</li>
+      <li>http://www.microsoft.com/</li> -->
 </ul>
