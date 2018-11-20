@@ -6,5 +6,5 @@ describe Bookmark do
     expect(bookmark.url).to eq "http://www.google.com/"
   end
 
-  
+
 end
