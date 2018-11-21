@@ -2,9 +2,9 @@ require 'pg'
 
 feature 'Viewing bookmarks' do
   scenario 'A user can see bookmarks' do
-    Bookmark.create(url: "http://www.makersacademy.com")
-    Bookmark.create(url: "http://www.destroyallsoftware.com")
-    Bookmark.create(url: "http://www.google.com")
+    Bookmark.create(url: "http://www.makersacademy.com", title: "makers")
+    Bookmark.create(url: "http://www.destroyallsoftware.com", title: "destroy")
+    Bookmark.create(url: "http://www.google.com", title: "google")
 
     visit('/bookmarks')
 
